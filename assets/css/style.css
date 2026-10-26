@@ -1,0 +1,36 @@
+:root{--zan-orange:#F9A73E;--zan-black:#000;--zan-surface:#141414;--zan-line:#2a2a2a;--zan-text:#f4f1ee;--zan-muted:#a8a29b}
+body.menu{background:var(--zan-black);color:var(--zan-text);font-family:'DM Sans',system-ui,sans-serif}
+.menu h1,.menu h2,.menu h3,.menu .nome{font-family:'Shippori Mincho',serif}
+.topo{position:sticky;top:0;z-index:20;background:var(--zan-black);border-bottom:1px solid var(--zan-line)}
+.topo .logo{height:46px;width:auto}
+.mesa{border:1.5px solid var(--zan-orange);color:var(--zan-orange);border-radius:999px;padding:.2rem .8rem;font-size:.85rem}
+.chips{display:flex;gap:.5rem;overflow-x:auto;padding:.6rem 0;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1.5px solid var(--zan-line);color:var(--zan-text);border-radius:999px;padding:.35rem 1rem;text-decoration:none;font-size:.95rem}
+.chip.ativo{background:var(--zan-orange);border-color:var(--zan-orange);color:#000;font-weight:700}
+.secao{scroll-margin-top:118px;padding-top:1.75rem}
+.secao h2{font-size:1.7rem;font-weight:800;display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
+.secao h2::before{content:"";width:14px;height:34px;border:3px solid var(--zan-orange);border-radius:999px;flex:none}
+.item{background:var(--zan-surface);border:1px solid var(--zan-line);border-radius:14px;overflow:hidden;height:100%;cursor:pointer;display:flex;flex-direction:column;width:100%;text-align:left;color:inherit;padding:0}
+.item:focus-visible,.chip:focus-visible{outline:3px solid var(--zan-orange);outline-offset:2px}
+.item img,.item .sem-foto{width:100%;aspect-ratio:4/3;object-fit:cover;background:#1d1d1d}
+.sem-foto{display:grid;place-items:center;color:var(--zan-orange);font-size:2rem;font-family:'Shippori Mincho',serif}
+.item .corpo{padding:.8rem .9rem 1rem}
+.item .nome{font-size:1.05rem;font-weight:700;line-height:1.25;margin:0 0 .25rem}
+.item .desc{color:var(--zan-muted);font-size:.88rem;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.item .preco,.preco-modal{color:var(--zan-orange);font-weight:700;margin-top:.5rem}
+.modal-content{background:var(--zan-surface);color:var(--zan-text);border:1px solid var(--zan-line)}
+.modal-body img{width:100%;max-height:50vh;object-fit:cover;border-radius:10px}
+.rodape{color:var(--zan-muted);font-size:.85rem;padding:2.5rem 0 3rem;text-align:center}
+@media (prefers-reduced-motion:no-preference){.chip{transition:background .15s}}
+/* Admin */
+.admin-nav{background:#000}.admin-nav .nav-link{color:#fff}.admin-nav .nav-link.active{color:var(--zan-orange)}
+.btn-zan{background:var(--zan-orange);border-color:var(--zan-orange);color:#000;font-weight:600}
+.btn-zan:hover{background:#e8942a;border-color:#e8942a;color:#000}
+.thumb{width:64px;height:48px;object-fit:cover;border-radius:6px;background:#eee}
+.login-box{max-width:380px;margin:12vh auto}
+/* QR codes para impressão */
+.qr-card{background:#000;color:#fff;border-radius:14px;padding:1.2rem;text-align:center;break-inside:avoid}
+.qr-card img.logo{height:54px}.qr-card .qr{background:#fff;padding:10px;border-radius:10px;display:inline-block;margin:.8rem 0}
+.qr-card .num{font-family:'Shippori Mincho',serif;font-size:1.6rem;color:var(--zan-orange)}
+@media print{.no-print{display:none!important}body{background:#fff}.qr-card{border:1px solid #000;-webkit-print-color-adjust:exact;print-color-adjust:exact}}

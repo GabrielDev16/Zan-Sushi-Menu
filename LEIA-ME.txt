@@ -1,0 +1,9 @@
+ZAN SUSHI - CARDAPIO DIGITAL (PHP + MySQL + Bootstrap)
+
+1) Copie a pasta para o servidor (XAMPP: htdocs/zan-sushi).
+2) Importe sql/database.sql no phpMyAdmin.
+3) Ajuste usuario/senha do banco em config.php.
+4) Cardapio: /zan-sushi/      Painel: /zan-sushi/admin/
+   Login inicial: admin / zan@2026  (troque a senha!)
+5) Em Admin > QR Codes, informe o endereco PUBLICO do site, gere e imprima.
+   A pasta uploads/ precisa de permissao de escrita.
