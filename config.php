@@ -1,9 +1,9 @@
 <?php
 // ====== AJUSTE AQUI ======
-const DB_HOST = 'localhost';
-const DB_NAME = 'zansushi';
-const DB_USER = 'root';
-const DB_PASS = '';
+const DB_HOST = 'sql105.infinityfree.com';
+const DB_NAME = 'if0_43279775_zansushi';
+const DB_USER = 'if0_43279775';
+const DB_PASS = 'ujrCPIZDxWw';
 // =========================
 session_start();
 

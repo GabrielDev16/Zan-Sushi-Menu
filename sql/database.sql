@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS zan_sushi CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE zan_sushi;
+-- CREATE DATABASE IF NOT EXISTS zan_sushi CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+-- USE zan_sushi;
 
 CREATE TABLE IF NOT EXISTS admins (
   id INT AUTO_INCREMENT PRIMARY KEY,
